@@ -1,6 +1,6 @@
 import { NavBar } from "./components/NavBar";
 import { ItemListContainer } from "./components/ItemListContainer";
-import "./App.css";
+import "./index.css";
 
 export function App() {
   const nombre = "Horacio";
@@ -8,7 +8,7 @@ export function App() {
 
   return (
     <>
-      <header>
+      <header className="bg-dark-navy sticky top-0 z-50 shadow-lg">
         <NavBar />
       </header>
       <main>

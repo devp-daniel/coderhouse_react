@@ -1,36 +1,15 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: white;
-  background-color: #2f3847;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@theme {
+  --color-dark-navy: #232a34;
+  --color-card-bg: #2f3847;
+  --color-accent-orange: #ff6b35;
+  --color-accent-pink: #ff8e9b;
+  --color-accent-mint: #7bdcb5;
+  --color-accent-blue: #8ed1fc;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 2rem;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+body {
+  font-family: "Poppins", sans-serif;
 }
