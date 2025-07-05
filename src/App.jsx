@@ -7,14 +7,14 @@ export function App() {
   const categorias = ["Tecnologia", "Ropa", "Comida", "Hogar"];
 
   return (
-    <>
-      <header className="bg-dark-navy sticky top-0 z-50 shadow-lg">
+    <div className="bg-[#232a34] text-white min-h-screen">
+      <header className="sticky top-0 z-50 bg-[#232a34] shadow-lg">
         <NavBar />
       </header>
       <main>
         <ItemListContainer name={nombre} categoria={categorias} />
       </main>
       <footer></footer>
-    </>
+    </div>
   );
 }

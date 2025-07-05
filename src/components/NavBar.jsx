@@ -8,19 +8,19 @@ export function NavBar() {
       </a>
       <nav className="hidden md:block">
         <ul className="flex gap-8 font-semibold">
-          <li className="hover:text-accent-pink transition">
+          <li className="hover:text-[#ff8e9b] transition">
             <a href="">Inicio</a>
           </li>
-          <li className="hover:text-accent-pink transition">
+          <li className="hover:text-[#ff8e9b] transition">
             <a href="">Tienda</a>
           </li>
-          <li className="hover:text-accent-pink transition">
+          <li className="hover:text-[#ff8e9b] transition">
             <a href="">Productos</a>
           </li>
-          <li className="hover:text-accent-pink transition">
+          <li className="hover:text-[#ff8e9b] transition">
             <a href="">Sobre Nosotros</a>
           </li>
-          <li className="hover:text-accent-pink transition">
+          <li className="hover:text-[#ff8e9b] transition">
             <a href="">Contactanos</a>
           </li>
           <CartWidget />
