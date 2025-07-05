@@ -138,22 +138,34 @@ export function ItemListContainer({ name, categoria }) {
             <h3 className="text-[#ff8e9b] font-bold mb-4">Links</h3>
             <ul>
               <li>
-                <a href="#" className="hover:pl-2 transition">
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]"
+                >
                   Tienda
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:pl-2 transition">
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]"
+                >
                   Sobre Nosotros
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:pl-2 transition">
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]"
+                >
                   Contacto
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:pl-2 transition">
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]"
+                >
                   FAQs
                 </a>
               </li>
@@ -163,17 +175,26 @@ export function ItemListContainer({ name, categoria }) {
             <h3 className="text-[#ff8e9b] font-bold mb-4">Soporte</h3>
             <ul>
               <li>
-                <a href="#" className="hover:pl-2 transition">
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]"
+                >
                   Envios y Devoluciones
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:pl-2 transition">
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]"
+                >
                   Politica de Privacidad
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:pl-2 transition">
+                <a
+                  href="#"
+                  className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]"
+                >
                   Terminos de Servicio
                 </a>
               </li>
