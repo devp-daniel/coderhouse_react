@@ -21,7 +21,7 @@ export function NavBar() {
             <a href="">Sobre Nosotros</a>
           </li>
           <li className="hover:text-[#ff8e9b] transition">
-            <a href="">Contactanos</a>
+            <a href="">Contacto</a>
           </li>
           <CartWidget />
         </ul>
