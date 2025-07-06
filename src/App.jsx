@@ -1,20 +1,25 @@
-import { NavBar } from "./components/NavBar";
-import { ItemListContainer } from "./components/ItemListContainer";
 import "./index.css";
 
-export function App() {
-  const nombre = "Horacio";
-  const categorias = ["Tecnologia", "Ropa", "Comida", "Hogar"];
+import { NavBar } from "./components/NavBar";
+import { Banner } from "./components/Banner";
+import { ItemListContainer } from "./components/ItemListContainer";
+import { Destacados } from "./components/Destacados";
+import { Footer } from "./components/Footer";
 
+export function App() {
   return (
     <div className="bg-[#232a34] text-white min-h-screen">
-      <header className="sticky top-0 z-50 bg-[#232a34] shadow-lg">
+      <header>
         <NavBar />
       </header>
       <main>
-        <ItemListContainer name={nombre} categoria={categorias} />
+        <Banner />
+        <ItemListContainer />
+        <Destacados />
       </main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

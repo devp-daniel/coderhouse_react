@@ -2,30 +2,26 @@ import { CartWidget } from "./CartWidget";
 
 export function NavBar() {
   return (
-    <div className="container mx-auto flex items-center justify-between py-4 px-4">
-      <a href="#" className="flex items-center">
-        <img src="./logo.png" alt="VariaStore Logo" className="h-12" />
-      </a>
-      <nav className="hidden md:block">
-        <ul className="flex gap-8 font-semibold">
-          <li className="hover:text-[#ff8e9b] transition">
-            <a href="">Inicio</a>
-          </li>
-          <li className="hover:text-[#ff8e9b] transition">
-            <a href="">Tienda</a>
-          </li>
-          <li className="hover:text-[#ff8e9b] transition">
-            <a href="">Productos</a>
-          </li>
-          <li className="hover:text-[#ff8e9b] transition">
-            <a href="">Sobre Nosotros</a>
-          </li>
-          <li className="hover:text-[#ff8e9b] transition">
-            <a href="">Contacto</a>
-          </li>
-          <CartWidget />
-        </ul>
-      </nav>
-    </div>
+    <section className="sticky top-0 z-50 bg-[#232a34] shadow-lg">
+      <div className="container mx-auto flex items-center justify-around py-4 px-4">
+        <a href="#" className="flex items-center">
+          <img src="./logo.png" alt="VariaStore Logo" className="h-12" />
+        </a>
+        <nav className="hidden md:block ">
+          <ul className="flex gap-8 font-semibold">
+            <li className="hover:text-[#ff8e9b] transition">
+              <a href="">Inicio</a>
+            </li>
+            <li className="hover:text-[#ff8e9b] transition">
+              <a href="">Categorias</a>
+            </li>
+            <li className="hover:text-[#ff8e9b] transition">
+              <a href="">Todos los Productos</a>
+            </li>
+            <CartWidget />
+          </ul>
+        </nav>
+      </div>
+    </section>
   );
 }
