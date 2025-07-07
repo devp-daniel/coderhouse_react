@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -46,29 +47,14 @@ export function Footer() {
         <div>
           <h3 className="text-[#ff8e9b] font-bold mb-4 ">Links</h3>
           <ul>
-            <li>
-              <a
-                href="#"
-                className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]"
-              >
-                Inicio
-              </a>
+            <li className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]">
+              <Link to="/">Inicio</Link>
             </li>
-            <li>
-              <a
-                href="#"
-                className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]"
-              >
-                Categorias
-              </a>
+            <li className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]">
+              <Link to="/">Categorías</Link>
             </li>
-            <li>
-              <a
-                href="#"
-                className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]"
-              >
-                Todos los Productos
-              </a>
+            <li className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]">
+              <Link to="/productos">Todos los Productos</Link>
             </li>
           </ul>
         </div>
