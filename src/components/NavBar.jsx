@@ -14,7 +14,7 @@ export function NavBar() {
               <Link to="/">Inicio</Link>
             </li>
             <li className="hover:text-[#ff8e9b] transition">
-              <Link to="/">Categorías</Link>
+              <Link to="/#categorias">Categorías</Link>
             </li>
             <li className="hover:text-[#ff8e9b] transition">
               <Link to="/productos">Todos los Productos</Link>

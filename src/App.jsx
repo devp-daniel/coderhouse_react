@@ -1,5 +1,5 @@
 import "./index.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
@@ -27,7 +27,7 @@ function TodosProductos() {
 
 export function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="bg-[#232a34] text-white min-h-screen">
         <header>
           <NavBar />
@@ -43,6 +43,6 @@ export function App() {
           <Footer />
         </footer>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }

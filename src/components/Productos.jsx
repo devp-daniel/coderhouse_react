@@ -67,7 +67,6 @@ export function Productos() {
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
-    // Actualizar URL sin recargar la página
     const params = new URLSearchParams();
     if (category !== "all") {
       params.set("category", category);
@@ -82,7 +81,7 @@ export function Productos() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0f1419] text-white py-16">
+    <div className="min-h-screen bg-[#0f1419] text-white py-14">
       <div className="max-w-7xl mx-auto px-6">
         <h1 className="text-4xl font-bold text-center mb-10">
           Todos los Productos

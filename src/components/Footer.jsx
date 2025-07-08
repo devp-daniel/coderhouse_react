@@ -18,25 +18,29 @@ export function Footer() {
           </p>
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://github.com/devp-daniel/coderhouse_react"
+              target="_blank"
               className="w-10 h-10 flex items-center justify-center rounded-full border border-[#404a5a] text-white hover:bg-gradient-to-r hover:from-[#ff6b35] hover:to-[#ff8e9b] transition"
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/"
+              target="_blank"
               className="w-10 h-10 flex items-center justify-center rounded-full border border-[#404a5a] text-white hover:bg-gradient-to-r hover:from-[#ff6b35] hover:to-[#ff8e9b] transition"
             >
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/"
+              target="_blank"
               className="w-10 h-10 flex items-center justify-center rounded-full border border-[#404a5a] text-white hover:bg-gradient-to-r hover:from-[#ff6b35] hover:to-[#ff8e9b] transition"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a
-              href="#"
+              href="https://x.com/"
+              target="_blank"
               className="w-10 h-10 flex items-center justify-center rounded-full border border-[#404a5a] text-white hover:bg-gradient-to-r hover:from-[#ff6b35] hover:to-[#ff8e9b] transition"
             >
               <FontAwesomeIcon icon={faTwitter} />
@@ -51,7 +55,7 @@ export function Footer() {
               <Link to="/">Inicio</Link>
             </li>
             <li className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]">
-              <Link to="/">Categorías</Link>
+              <Link to="/#categorias">Categorías</Link>
             </li>
             <li className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]">
               <Link to="/productos">Todos los Productos</Link>
