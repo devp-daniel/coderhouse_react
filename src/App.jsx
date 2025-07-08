@@ -5,12 +5,12 @@ import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import { ItemListContainer } from "./components/ItemListContainer";
 import { Destacados } from "./components/Destacados";
-import { Footer } from "./components/Footer";
-import { ItemDetailContainer } from "./components/ItemDetailContainer";
 import { Productos } from "./components/Productos";
+import { ItemDetailContainer } from "./components/ItemDetailContainer";
+import { Footer } from "./components/Footer";
 
 // Página principal
-function HomePage() {
+function MainPage() {
   return (
     <>
       <Banner />
@@ -34,7 +34,7 @@ export function App() {
         </header>
         <main>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<MainPage />} />
             <Route path="/productos" element={<TodosProductos />} />
             <Route path="/product/:id" element={<ItemDetailContainer />} />
           </Routes>
