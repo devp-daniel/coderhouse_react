@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { getProducts, getCategories } from "../async";
 
-export function Productos() {
+export function ItemList() {
   const [allProducts, setAllProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -38,7 +38,6 @@ export function Productos() {
     loadData();
   }, [searchParams]);
 
-  // Filtrar productos cuando cambien los criterios
   useEffect(() => {
     let filtered = [...allProducts];
 
@@ -71,13 +70,13 @@ export function Productos() {
     if (category !== "all") {
       params.set("category", category);
     }
-    navigate(`/productos?${params.toString()}`, { replace: true });
+    navigate(`/products?${params.toString()}`, { replace: true });
   };
 
   const clearFilters = () => {
     setSelectedCategory("all");
     setSearchTerm("");
-    navigate("/productos", { replace: true });
+    navigate("/products", { replace: true });
   };
 
   return (

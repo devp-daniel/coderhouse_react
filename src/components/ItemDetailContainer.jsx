@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getProductById } from "../async";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-
 import { ItemCount } from "./ItemCount";
+import { getProductById } from "../async";
 
 export function ItemDetailContainer() {
   const [product, setProduct] = useState(null);

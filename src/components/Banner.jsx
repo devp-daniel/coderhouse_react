@@ -12,7 +12,7 @@ export function Banner() {
         </p>
         <div className="mt-4">
           <Link
-            to="/productos"
+            to="/products"
             className="inline-block bg-gradient-to-r from-[#ff6b35] to-[#ff8e9b] text-white font-semibold rounded-full px-8 py-3 shadow-lg hover:scale-105 transition"
           >
             Explorar Productos

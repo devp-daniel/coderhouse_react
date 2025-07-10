@@ -2,28 +2,11 @@ import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { NavBar } from "./components/NavBar";
-import { Banner } from "./components/Banner";
 import { ItemListContainer } from "./components/ItemListContainer";
-import { Destacados } from "./components/Destacados";
-import { Productos } from "./components/Productos";
+import { ItemList } from "./components/ItemList";
 import { ItemDetailContainer } from "./components/ItemDetailContainer";
 import { Footer } from "./components/Footer";
-
-// Página principal
-function MainPage() {
-  return (
-    <>
-      <Banner />
-      <ItemListContainer />
-      <Destacados />
-    </>
-  );
-}
-
-// Todos los productos
-function TodosProductos() {
-  return <Productos />;
-}
+import { Error } from "./components/Error";
 
 export function App() {
   return (
@@ -34,9 +17,10 @@ export function App() {
         </header>
         <main>
           <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/productos" element={<TodosProductos />} />
+            <Route path="/" element={<ItemListContainer />} />
+            <Route path="/products" element={<ItemList />} />
             <Route path="/product/:id" element={<ItemDetailContainer />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </main>
         <footer>

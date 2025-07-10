@@ -8,16 +8,13 @@ export function NavBar() {
         <Link to="/" className="flex items-center">
           <img src="/logo.png" alt="VariaStore Logo" className="h-12" />
         </Link>
-        <nav className="hidden md:block ">
+        <nav className="md:block ">
           <ul className="flex gap-8 font-semibold">
             <li className="hover:text-[#ff8e9b] transition">
               <Link to="/">Inicio</Link>
             </li>
             <li className="hover:text-[#ff8e9b] transition">
-              <Link to="/#categorias">Categorías</Link>
-            </li>
-            <li className="hover:text-[#ff8e9b] transition">
-              <Link to="/productos">Todos los Productos</Link>
+              <Link to="/products">Todos los Productos</Link>
             </li>
             <CartWidget />
           </ul>

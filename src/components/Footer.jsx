@@ -9,7 +9,7 @@ import {
 
 export function Footer() {
   return (
-    <footer className="bg-[#1c232c] py-16">
+    <footer className="bg-[#1c232c] py-10">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 mb-8">
         <div className="col-span-2">
           <img src="./logo.png" alt="VariaStore Logo" className="h-10 mb-4" />
@@ -55,10 +55,7 @@ export function Footer() {
               <Link to="/">Inicio</Link>
             </li>
             <li className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]">
-              <Link to="/#categorias">Categorías</Link>
-            </li>
-            <li className="transition-all duration-300 hover:pl-2 hover:text-[#ff8e9b]">
-              <Link to="/productos">Todos los Productos</Link>
+              <Link to="/products">Todos los Productos</Link>
             </li>
           </ul>
         </div>
