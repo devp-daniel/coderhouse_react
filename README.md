@@ -61,7 +61,7 @@
     </td>
     <td>
     <h3>Vista de la pagina Error 404</h3>
-    <img src="./public/readme/error-v2.png" width="100%">
+    <img src="./public/readme/error404-v2.png" width="100%">
     </td>
   </tr>
 </table>
