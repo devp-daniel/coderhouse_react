@@ -5,9 +5,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-nav a.active {
+nav .space-x-4 a:hover,
+nav .space-y-1 a:hover {
+  background-color: #f3f4f6;
   color: #ff8e9b;
-  font-weight: bold;
+}
+
+nav .space-x-4 a.active,
+nav .space-y-1 a.active {
+  background-color: #ff8e9b;
 }
 
 @keyframes gradient-move {
