@@ -9,7 +9,6 @@
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
   <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white">
 </h3>
-<h2>Link de Vercel</h2>
 <h2>Entrega #1 (20-6-2025)</h2>
 <h3>Objetivos</h3>
 <ul>
