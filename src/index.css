@@ -25,7 +25,3 @@ nav .space-y-1 a.active {
     background-position: 100% 50%;
   }
 }
-.animate-gradient-move {
-  background-size: 200% 200%;
-  animation: gradient-move 10s ease infinite;
-}
