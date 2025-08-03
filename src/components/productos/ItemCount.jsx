@@ -1,26 +1,26 @@
-export function ItemCount({ quantity, setQuantity }) {
+export function ItemCount({ quantity, setQuantity, stock }) {
   const incrementQuantity = () => {
-    setQuantity((prev) => Math.min(prev + 1, 99));
+    setQuantity((prev) => Math.min(prev + 1, stock));
   };
 
   const decrementQuantity = () => {
-    setQuantity((prev) => Math.max(prev - 1, 1));
+    setQuantity((prev) => Math.max(prev - 1, 0));
   };
 
   const handleQuantityChange = (e) => {
     const value = parseInt(e.target.value);
-    if (!isNaN(value) && value >= 1 && value <= 99) {
+    if (!isNaN(value) && value >= 1 && value <= stock) {
       setQuantity(value);
     }
   };
 
   return (
-    <div className="flex items-center space-x-4">
+    <section className="flex items-center space-x-4">
       <div className="flex items-center bg-[#0f1419] rounded-lg border border-[#8ed1fc]">
         <button
           onClick={decrementQuantity}
           className="px-4 py-2 text-[#8ed1fc] hover:bg-[#8ed1fc] hover:text-[#0f1419] transition rounded-l-lg font-bold text-xl cursor-pointer"
-          disabled={quantity <= 1}
+          disabled={quantity <= 0}
         >
           -
         </button>
@@ -35,7 +35,7 @@ export function ItemCount({ quantity, setQuantity }) {
         <button
           onClick={incrementQuantity}
           className="px-4 py-2 text-[#8ed1fc] hover:bg-[#8ed1fc] hover:text-[#0f1419] transition rounded-r-lg font-bold text-xl cursor-pointer"
-          disabled={quantity >= 99}
+          disabled={quantity >= stock}
         >
           +
         </button>
@@ -43,6 +43,6 @@ export function ItemCount({ quantity, setQuantity }) {
       <span className="text-gray-300">
         {quantity === 1 ? "1 unidad" : `${quantity} unidades`}
       </span>
-    </div>
+    </section>
   );
 }
